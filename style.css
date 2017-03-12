@@ -1,0 +1,53 @@
+body{
+	font-family: 'Arial';
+	margin: 0;
+	min-width: 0px;
+}
+
+.table{
+	margin: 0 auto;
+	max-width: 1200px;
+	width: 80%;
+	min-width: 400px;
+}
+
+.table-tr-header{
+	background: #bbb;
+	border: 1px solid #000;
+	text-align: center;
+	width: 100px;
+}
+
+.table-tr-row{
+	background: #eee;
+	text-align: center;
+}
+
+@media (max-width: 750px){
+
+	.table-tr-header{
+		display: none;
+	}
+
+	.table-tr-row{
+		display: block;
+		margin-bottom: 10px;
+	}
+
+	.table-tr-row td{
+		border: 1px solid #fff;
+		display: block;
+		text-align: right;
+	}
+
+	.table-tr-row td:before{
+		background: #ccc;
+		border-right: 2px solid #fff;
+		content: attr(data-label);
+		float: left;
+		padding-right: 140px;
+		text-align: left;
+		text-indent: 5px;
+		width: 100px;
+	}
+}
